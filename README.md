@@ -26,10 +26,6 @@ This project is a simple user registration and login system built using Vanilla 
 3. Register a new user by providing a username and password.
 4. Log in using the registered credentials.
 
-## Project Structure
-
----
-
 
 
 # Sistema de Registro e Inicio de Sesión de Usuarios
@@ -59,5 +55,3 @@ Este proyecto es un sistema simple de registro e inicio de sesión de usuarios c
 2. Abre el archivo `index.html` en tu navegador.
 3. Registra un nuevo usuario proporcionando un nombre de usuario y contraseña.
 4. Inicia sesión utilizando las credenciales registradas.
-
-## Estructura del Proyecto
