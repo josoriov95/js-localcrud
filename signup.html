@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>Registrate</h1>
     </header>
-    <form id="signup" action="">
+    <form id="signup-form" action="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required>
         <label for="correo">Correo:</label>
         <input type="email" name="correo" id="correo" required>
         <label for="pass">Password:</label>
         <input type="password" name="pass" id="pass" required>
-        <input type="submit" value="Iniciar Sesión">
+        <input type="submit" value="Crear Cuenta">
     </form>
-    <p>Tienes una cuenta?</p>
+    <p>¿Ya tienes una cuenta?</p>
     <a href="login.html">Inicia Sesión</a>
+    <script src="js/signup.js"></script>
 </body>
 </html>
