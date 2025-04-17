@@ -15,9 +15,6 @@
 
 html {
     font-size: var(--font-size-base);
-}
-
-html {
     box-sizing: border-box;
 }
 
@@ -36,6 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 2rem;
 }
 
 form {
@@ -49,9 +47,10 @@ form {
 
 h1 {
     font-size: 2.6rem;
+    text-align: center;
 }
 
-p, a{
+p, a {
     font-size: 1.6rem;
 }
 
@@ -62,6 +61,16 @@ input, button, textarea, select, label {
     border: none;
     border-radius: var(--border-radius);
     width: 100%;
+}
+
+button{
+    transition: background-color .2s ease-in-out;
+}
+
+button:hover{
+    background-color: var(--color-button-background);
+    color: var(--color-text);
+    cursor: pointer;
 }
 
 input, textarea, select {
@@ -78,4 +87,35 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: var(--color-button-hover);
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 768px) {
+    :root {
+        --font-size-base: 58%;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    p, a, input, button, textarea, select, label {
+        font-size: 1.5rem;
+    }
+    form {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --font-size-base: 55%;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    p, a, input, button, textarea, select, label {
+        font-size: 1.4rem;
+    }
+    form {
+        padding: 1.6rem;
+    }
 }

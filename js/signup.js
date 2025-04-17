@@ -9,7 +9,7 @@ signupForm.addEventListener("submit", (e) => {
     const Users = JSON.parse(localStorage.getItem("users")) || [];
     const isUserRegistered = Users.find(user => user.correo === correo);
     if (isUserRegistered) {
-        return alert("Ya existe un usuario con el correo " + correo);
+        return alert("Ya existe un usuario con ese correo " + correo);
     }
 
     Users.push({nombre: nombre, correo: correo, pass: pass});
