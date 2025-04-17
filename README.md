@@ -1,4 +1,4 @@
-# User Registration and Login System
+# A Simple User Registration and Login System With JS
 
 This project is a simple user registration and login system built using Vanilla JavaScript and LocalStorage. It allows users to register with their credentials, securely store their data in the browser's LocalStorage, and log in to access the system.
 
